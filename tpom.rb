@@ -5,21 +5,21 @@
 class Tpom < Formula
   desc "A minimalist pomodoro timer for the terminal"
   homepage "https://github.com/MaximusBenjamin/terminal-pomodoro"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.0/tpom_0.7.0_darwin_amd64.tar.gz"
-      sha256 "f8b74c9a99cb924fe8909d4796ebe2e8a78c628a05d47a5c74b1f3de5a9b1e0d"
+      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.1/tpom_0.7.1_darwin_amd64.tar.gz"
+      sha256 "d53f41b2c59dd7c78419c129e3ebe0d9100095e0eb432fc5afa7e5010038fbcb"
 
       define_method(:install) do
         bin.install "tpom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.0/tpom_0.7.0_darwin_arm64.tar.gz"
-      sha256 "fac83cc930452249db34cbf41bbe35620f4c371b6b17e38c9f71c2c48b214d6e"
+      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.1/tpom_0.7.1_darwin_arm64.tar.gz"
+      sha256 "f0e08505e3d0f59a0060b5263042697b1e3058e8c7f9255d3a249b2ea478f101"
 
       define_method(:install) do
         bin.install "tpom"
@@ -29,15 +29,15 @@ class Tpom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.0/tpom_0.7.0_linux_amd64.tar.gz"
-      sha256 "04427fffc3aeece30e2ea612ac76aecbc2cea49addae6c0add08fbcb2e8e2982"
+      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.1/tpom_0.7.1_linux_amd64.tar.gz"
+      sha256 "83a55a59bdd4d10438e1ae97d8b9b9b64b6e17e7fa2ff7f0184c9c0f41ae554d"
       define_method(:install) do
         bin.install "tpom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.0/tpom_0.7.0_linux_arm64.tar.gz"
-      sha256 "b59e9f44811d60e707043ba804441f2cf37557af85847014e04e1df013119253"
+      url "https://github.com/MaximusBenjamin/terminal-pomodoro/releases/download/v0.7.1/tpom_0.7.1_linux_arm64.tar.gz"
+      sha256 "c08585bd1ed94f304bb96728f77a151ff20bba5e419a687e002f4313b88a4a21"
       define_method(:install) do
         bin.install "tpom"
       end
